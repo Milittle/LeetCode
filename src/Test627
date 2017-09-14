@@ -1,0 +1,9 @@
+--这是一种sql新语法
+--让在一条语句中，将f值改为m，m值改为f值
+--那么下面用的是sql的case when语法
+update salary set sex = (
+	case sex
+	when 'm' then 'f'
+	when 'f' then 'm'
+	else sex end
+	)
